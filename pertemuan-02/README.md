@@ -107,13 +107,13 @@ Ketika pengguna mengakses alamat URL apa pun melalui peramban, seluruh permintaa
   ## jawaban 8. Bukti Tangkapan Layar
 
 ### Gambar 1. Hasil Pengujian Halaman Utama
-![Gambar 1 - Halaman Utama](dokumentasi/gambar1.jpg)
+![Gambar 1 - Halaman Utama](dokumentasi/gambar1.png)
 
 ### Gambar 2. Hasil Pengujian Custom Route Mahasiswa
-![Gambar 2 - Custom Route Mahasiswa](dokumentasi/gambar2.jpg)
+![Gambar 2 - Custom Route Mahasiswa](dokumentasi/gambar2.png)
 
 ### Gambar 3. Hasil Pengujian Route Info
-![Gambar 3 - Info Routing](dokumentasi/gambar3.jpg)
+![Gambar 3 - Info Routing](dokumentasi/gambar3.png)
 
 ## jawaban 9. Kesimpulan P2
 

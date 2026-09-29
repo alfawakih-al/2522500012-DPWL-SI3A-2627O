@@ -104,7 +104,9 @@ Ketika pengguna mengakses alamat URL apa pun melalui peramban, seluruh permintaa
   * **Perbaikan:** Melakukan penyimpanan seluruh berkas (`Ctrl + S`) dan mengeksekusi *hard refresh* (`Ctrl + F5`) pada peramban[cite: 1].
   * **Hasil Uji Ulang:** Halaman web berhasil menampilkan data profil mahasiswa secara dinamis dan diperbarui[cite: 1].
 
-  ## jawaban 8. Bukti Tangkapan Layar
+  * **Hasil Uji Ulang:** Halaman web berhasil menampilkan data profil mahasiswa secara dinamis dan diperbarui.
+
+## 8. Bukti Tangkapan Layar
 
 ### Gambar 1. Hasil Pengujian Halaman Utama
 ![Gambar 1 - Halaman Utama](dokumentasi/gambar1.png)

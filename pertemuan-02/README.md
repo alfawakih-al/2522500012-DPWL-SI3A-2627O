@@ -23,27 +23,24 @@ pertemuan-02/
 │       └── app.css         -> File stylesheet aset statis[cite: 1]
 ├── system/                  -> Core framework MVC[cite: 1]
 └── index.php               -> Front Controller (pintu masuk utama aplikasi)[cite: 1]
+```
 
 ## jawaban 3. Front controller
 File index.php yang terletak pada direktori utama bertindak sebagai Front Controller atau satu-satunya titik masuk (single entry point) untuk seluruh request aplikasi[cite: 1].
 
 Ketika pengguna mengakses alamat URL apa pun melalui peramban, seluruh permintaan tersebut akan ditangkap dan dilewatkan terlebih dahulu melalui index.php[cite: 1]. Di dalam file ini, aplikasi memuat konfigurasi awal, memanggil komponen core framework, menginisialisasi sistem routing, hingga akhirnya memanggil controller dan view yang sesuai[cite: 1]. Konsep ini memastikan bahwa eksekusi sistem terpusat, konsisten, dan terstruktur dengan aman[cite: 1].
 
-## jawaban 4. Routing dan Pemetaan URL
+## 4. Routing dan Pemetaan URL
+
+Berikut adalah tabel pemetaan alur permintaan (*request*) dari URL ke Controller, Method, Parameter, hingga View yang dirender:
+
 | URL/Route | Controller | Method | Parameter | View |
 |---|---|---|---|---|
-| / | Home | index | - | home/index.php |
-| home/index | Home | index | - | home/index.php |
-| home/info/mvc | Home | info | mvc | home/info.php |
-| info/routing | Home | info | routing | home/info.php |
-| mahasiswa/(:num) | Home | mahasiswa | $1 | home/mahasiswa.php |
-
-**Penjelasan Pemetaan Rute Modifikasi ATM:**
-- **Route (`mahasiswa/(:num)`):** Menangkap permintaan URL yang diawali kata `mahasiswa/` dan diikuti oleh angka variabel `(:num)` (misalnya NIM `2522500012`).
-- **Controller (`Home`):** Menunjuk ke kelas `Home` pada berkas `application/controllers/Home.php`.
-- **Method (`mahasiswa`):** Mengeksekusi fungsi/method `mahasiswa()` di dalam Controller `Home`.
-- **Parameter (`$1`):** Nilai angka NIM dari URL ditangkap oleh wildcard `(:num)` dan dikirim sebagai argumen ke method `mahasiswa($nim)`.
-- **View (`home/mahasiswa.php`):** Controller mengolah data profil (NIM: 2522500012, Nama: Fariq Akbar Al Fawakih, Kelas: SI3A) lalu memuat tampilan akhir pada file View `home/mahasiswa.php`.
+| `/` | Home | index | - | home/index.php |
+| `home/index` | Home | index | - | home/index.php |
+| `home/info/mvc` | Home | info | mvc | home/info.php |
+| `info/routing` | Home | info | routing | home/info.php |
+| `mahasiswa/1` | Mahasiswa | index | 1 | mahasiswa/index.php ||
 
 | mahasiswa/(:num) | Home | mahasiswa | $1 | home/mahasiswa.php |
 
@@ -109,13 +106,13 @@ Ketika pengguna mengakses alamat URL apa pun melalui peramban, seluruh permintaa
 ## 8. Bukti Tangkapan Layar
 
 ### Gambar 1. Hasil Pengujian Halaman Utama
-![Gambar 1 - Halaman Utama](dokumentasi/gambar1.png)
+![Gambar 1](dokumentasi/gambar1.jpg)
 
 ### Gambar 2. Hasil Pengujian Custom Route Mahasiswa
-![Gambar 2 - Custom Route Mahasiswa](dokumentasi/gambar2.png)
+![Gambar 2](dokumentasi/gambar2.jpg)
 
 ### Gambar 3. Hasil Pengujian Route Info
-![Gambar 3 - Info Routing](dokumentasi/gambar3.png)
+![Gambar 3](dokumentasi/gambar3.jpg)
 
 ## jawaban 9. Kesimpulan P2
 

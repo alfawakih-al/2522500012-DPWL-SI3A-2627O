@@ -3,7 +3,7 @@ $db = new mysqli(
 'localhost',
 'root',
 '',
-'db_dpwl_dika',
+'db_dpwl_fariq',
 3306
 );
 if ($db->connect_errno) {

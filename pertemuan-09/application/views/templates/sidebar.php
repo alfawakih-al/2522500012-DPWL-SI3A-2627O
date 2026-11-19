@@ -63,9 +63,9 @@ fa-search"></i>
 <i class="fa fa-id-card"></i> <span>Manajemen Penyewa</span>
 </a>
 </li>
-<li>
-<a href="<?= htmlspecialchars(site_url('admin/pembayaran'), ENT_QUOTES, 'UTF-8') ?>">
-<i class="fa fa-money"></i> <span>Verifikasi Pembayaran</span>
+<li class="<?= $menuAktif === 'verifikasi' ? 'active' : '' ?>">
+<a href="<?= htmlspecialchars(site_url('admin/verifikasi'), ENT_QUOTES, 'UTF-8') ?>">
+<i class="fa fa-check-square-o"></i> <span>Verifikasi Pembayaran</span>
 </a>
 </li>
 <!--/ ditambahkan pada P8-->

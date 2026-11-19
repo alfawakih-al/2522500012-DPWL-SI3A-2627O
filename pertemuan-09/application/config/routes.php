@@ -40,10 +40,16 @@ $route['admin/penyewa'] = 'Mpenyewa_controller/index';
 $route['admin/penyewa/tambah'] = 'Mpenyewa_controller/tambah';
 $route['admin/penyewa/ubah/(:any)'] = 'Mpenyewa_controller/ubah/$1';
 $route['admin/penyewa/hapus/(:any)'] = 'Mpenyewa_controller/hapus/$1';
+
+// Pembayaran DP - sisi penyewa
 $route['pembayaran'] = 'Pembayaran_controller/index';
 $route['pembayaran/detail/(:any)'] = 'Pembayaran_controller/detail/$1';
-$route['pembayaran/upload/(:any)'] = 'Pembayaran_controller/uploadBukti/$1';
+$route['pembayaran/upload/(:any)'] = 'Pembayaran_controller/upload/$1';
+$route['pembayaran/bukti/(:any)'] = 'Pembayaran_controller/bukti/$1';
 
-$route['admin/pembayaran'] = 'Pembayaran_controller/verifikasiIndex';
-$route['admin/pembayaran/verifikasi/(:any)'] = 'Pembayaran_controller/verifikasiDetail/$1';
-$route['admin/pembayaran/proses/(:any)'] = 'Pembayaran_controller/prosesVerifikasi/$1';
+
+$route['admin/verifikasi'] = 'Verifikasi_controller/index';
+$route['admin/verifikasi/detail/(:any)'] = 'Verifikasi_controller/detail/$1';
+$route['admin/verifikasi/bukti/(:any)'] = 'Verifikasi_controller/bukti/$1';
+$route['admin/verifikasi/terima/(:any)'] = 'Verifikasi_controller/terima/$1';
+$route['admin/verifikasi/tolak/(:any)'] = 'Verifikasi_controller/tolak/$1';
